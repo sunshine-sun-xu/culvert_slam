@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>culvert_frontend_mapping</name>
+  <version>0.0.0</version>
+  <description>Frontend local and global occupancy mapping for culvert exploration.</description>
+  <maintainer email="hust-craic@todo.todo">hust-craic</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>geometry_msgs</depend>
+  <depend>culvert_mapping_interfaces</depend>
+  <depend>grid_map_msgs</depend>
+  <depend>message_filters</depend>
+  <depend>nav_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>sensor_msgs_py</depend>
+  <depend>std_srvs</depend>
+  <depend>std_msgs</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>fastdem_ros2</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>nav2_behaviors</exec_depend>
+  <exec_depend>nav2_bt_navigator</exec_depend>
+  <exec_depend>nav2_common</exec_depend>
+  <exec_depend>nav2_controller</exec_depend>
+  <exec_depend>nav2_core</exec_depend>
+  <exec_depend>nav2_costmap_2d</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+  <exec_depend>nav2_mppi_controller</exec_depend>
+  <exec_depend>nav2_navfn_planner</exec_depend>
+  <exec_depend>nav2_planner</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

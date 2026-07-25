@@ -1,0 +1,8 @@
+livox_preprocess_node:
+  ros__parameters:
+    input_imu_topic: /livox/imu
+    input_lidar_topic: /livox/lidar
+    output_imu_topic: /livox/imu_rotated
+    output_lidar_topic: /livox/lidar_rotated
+    rotation_y_deg: 60.0
+    output_frame_id: ""

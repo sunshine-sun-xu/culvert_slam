@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>culvert_pgo</name>
+  <version>0.0.0</version>
+  <description>ROS2 backend skeleton for Scan Context candidate detection, ICP/GICP loop verification, and pose graph optimization.</description>
+  <maintainer email="hust-craic@todo.todo">hust-craic</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>GTSAM</depend>
+  <depend>geometry_msgs</depend>
+  <depend>culvert_mapping_interfaces</depend>
+  <depend>message_filters</depend>
+  <depend>nav_msgs</depend>
+  <depend>pcl_conversions</depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>visualization_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

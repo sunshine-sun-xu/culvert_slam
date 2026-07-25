@@ -1,0 +1,33 @@
+culvert_pgo_node:
+  ros__parameters:
+    odom_topic: /fastlio2/lio_odom
+    body_cloud_topic: /fastlio2/body_cloud
+    lidar_cloud_topic: /fastlio2/body_cloud
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+    submap_grid_topic: /submap_manager/submap_grids
+    optimized_submap_pose_topic: /culvert_pgo_node/optimized_submap_poses
+    dirty_submap_topic: /culvert_pgo_node/dirty_submap_list
+
+    keyframe_meter_gap: 0.5
+    keyframe_deg_gap: 10.0
+
+    scan_context_enable: true
+    scan_context_recent_exclusion: 30
+    scan_context_num_candidates: 10
+    scan_context_loop_threshold: 0.15
+    scan_context_max_radius: 20.0
+
+    loop_verification_method: gicp
+    loop_fitness_threshold: 0.35
+    loop_inlier_rmse_threshold: 0.40
+    loop_min_inliers: 50
+    loop_submap_half_range: 5
+    loop_submap_resolution: 0.15
+    registration_max_iterations: 50
+    registration_max_correspondence_distance: 5.0
+
+    pose_graph_enable: true
+    optimize_every_n_keyframes: 10
+    loop_search_radius: 10.0

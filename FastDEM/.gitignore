@@ -1,0 +1,75 @@
+# IDE
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*~
+
+# AI assistant files
+CLAUDE.md
+GEMINI.md
+**/CLAUDE.md
+**/GEMINI.md
+
+# Draft READMEs
+README copy.md
+README_new.md
+README_v2.md
+
+# Build artifacts
+build/
+devel/
+install/
+logs/
+.catkin_tools/
+*.o
+*.so
+*.a
+
+# Benchmark binaries
+fastdem/benchmarks/benchmark_*
+!fastdem/benchmarks/benchmark_*.cpp
+fastdem/lib/nanoPCL/**/benchmark_*
+!fastdem/lib/nanoPCL/**/benchmark_*.cpp
+fastdem/lib/nanoPCL/**/*_bench
+repro_ray
+
+# Data and output files
+data/
+maps/
+*.bag
+*.pcd
+*.ppm
+*.bin
+*.hmap
+*.tar.gz
+*.png
+!assets/*.png
+!fastdem/lib/grid_map_core/doc/**/*.png
+
+# Temporary files
+*.txt
+!CMakeLists.txt
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (internal dev docs)
+docs/
+
+# Experimental headers (not implemented yet)
+height_mapping/include/height_mapping/ops/decay.h
+height_mapping/include/height_mapping/ops/morphology.h
+height_mapping/include/height_mapping/ops/outlier_removal.h
+height_mapping/include/height_mapping/ops/smoothing.h

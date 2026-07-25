@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>culvert_submap_manager</name>
+  <version>0.1.0</version>
+  <description>Backend-agnostic submap asset manager for culvert elevation and traversability mapping.</description>
+  <maintainer email="hust-craic@todo.todo">hust-craic</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>culvert_mapping_interfaces</depend>
+  <depend>geometry_msgs</depend>
+  <depend>message_filters</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>sensor_msgs_py</depend>
+  <build_depend>fastdem</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+
+  <exec_depend>fastdem</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

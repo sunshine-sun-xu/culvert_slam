@@ -1,0 +1,32 @@
+traversability_to_map:
+  ros__parameters:
+    grid_map_topic: /fastdem/mapping/gridmap
+    map_topic: /traversability_map
+    local_map_topic: /traversability_map_local
+    mode: terrain_fusion
+    layer: elevation
+    confidence_layer: ""
+    uncertainty_layer: ""
+    water_cost_topic: /perception/water_costmap
+    frame_id: odom
+    fallback_frame_id: odom
+    unknown_value: -1
+    kernel_size: 3
+    median_filter_size: 3
+    min_confidence: 0.20
+    height_cost_zero_at_m: 0.02
+    height_cost_full_at_m: 0.12
+    slope_cost_full_at_deg: 18.0
+    roughness_cost_zero_at_m: 0.01
+    roughness_cost_full_at_m: 0.06
+    uncertainty_cost_zero_at: 0.15
+    uncertainty_cost_full_at: 0.80
+    water_cost_scale: 1.0
+    weight_height: 0.35
+    weight_slope: 0.30
+    weight_roughness: 0.20
+    weight_water: 0.15
+    weight_uncertainty: 0.10
+    accumulate_global: true
+    robot_clear_radius: 0.45
+    global_fusion_alpha: 0.45

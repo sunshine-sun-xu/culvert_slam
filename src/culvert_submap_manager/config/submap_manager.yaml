@@ -1,0 +1,37 @@
+submap_manager:
+  ros__parameters:
+    online_enable: true
+    body_cloud_topic: /fastlio2/body_cloud
+    odom_topic: /fastlio2/lio_odom
+    submap_grid_topic: /submap_manager/submap_grids
+    submap_content_dirty_topic: /submap_manager/submap_content_dirty
+
+    source_map_dir: /home/hust-craic/culvert_ws/tmp_pgo_map
+    output_dir: /home/hust-craic/culvert_ws/submaps
+    backend_name: fastlio2_pgo_hba_localizer
+    global_frame: map
+    sensor_frame: base_link
+    submap_size_m: 10.0
+    submap_resolution_m: 0.1
+    keyframes_per_submap: 20
+    overlap_keyframes: 5
+    dynamic_keyframe_enable: true
+    keyframe_meter_gap: 0.5
+    keyframe_deg_gap: 10.0
+    keyframe_meter_gap_min: 0.5
+    keyframe_meter_gap_max: 2.0
+    keyframe_deg_gap_min: 10.0
+    keyframe_deg_gap_max: 30.0
+    point_z_min: -0.6
+    point_z_max: 1.2
+    point_range_min: 0.3
+    point_range_max: 20.0
+    point_stride: 2
+    hit_score: 4
+    miss_score: 1
+    occupied_threshold: 2
+    free_threshold: -1
+    publish_rate: 2.0
+    asset_mode: symlink
+    clean_output: false
+    auto_build: false

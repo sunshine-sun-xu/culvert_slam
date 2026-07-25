@@ -1,0 +1,32 @@
+# ROS/colcon generated files
+build/
+install/
+log/
+
+# Nested package generated files
+**/build/
+**/install/
+**/log/
+**/__pycache__/
+*.pyc
+
+# Runtime and debug artifacts
+.ros/
+*.bag
+*.db3
+*.mcap
+*.pcd
+*.ply
+*.bin
+
+# Local editor/system files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Temporary map export products
+tmp_pgo_map/
+submaps/
+rebuild_output/
